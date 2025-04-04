@@ -41,7 +41,7 @@ class Chatbot:
         return self.enc.decode(tokens)
 
     def respond(self, user_input: str, max_length: int = 60, 
-               temperature: float = 0.7, top_k: int = 40) -> str:
+               temperature: float = 0.4, top_k: int = 40) -> str:
         """Generate response to user input."""
         try:
             # Update conversation history
